@@ -27,7 +27,7 @@ async function findAndSaveUser(Users) {
         user = await Users.findOne({
             gender: 'm'
         });
-        // 생략
+        // Code
     } catch (err) {
         console.error(err);
     }
@@ -42,7 +42,7 @@ const findAndSaveUser = async (Users) => {
         user = await Users.findOne({
             gender: 'm'
         });
-        // 생략
+        // Code
     } catch (err) {
         console.error(err);
     }
@@ -59,10 +59,10 @@ const promise2 = Promise.resolve('성공2');
 })();
 
 async function findAndSaveUser(Users) {
-    // 생략
+    // Code
 }
 
-findAndSaveUser().then(() => { /* 생략 */ });
+findAndSaveUser().then(() => { /* Code */ });
 // 또는
 async function other() {
     const result = await findAndSaveUser();
