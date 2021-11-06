@@ -91,3 +91,15 @@ Promise.all([promise1, promise2])
     .catch(err => {
         console.error(err);
     });
+
+// 개인적으로 Promise 연습
+const promise = new Promise((resolve, reject) => {
+    setTimeout(resolve, 1000)
+})
+promise
+    .then(() => {
+        console.log('성공!')
+    })
+    .catch(err => {
+        console.error(err)
+    })
