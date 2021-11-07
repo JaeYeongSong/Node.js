@@ -1,0 +1,27 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    // get
+    (async () => {
+        try {
+            let result = await axios.get('https://www.zerocho.com/api/get');
+            console.log(result);
+            console.log(result.data); // { }
+        } catch (err) {
+            console.error(err);
+        };
+    })();
+
+    // post
+    (async () => {
+        try {
+            let result = await axios.post('https://www.zerocho.com/api/post/json', {
+                name: 'zerocho',
+                birth: 1994,
+            });
+            console.log(result);
+            console.log(result.data); // { }
+        } catch (err) {
+            console.error(err);
+        };
+    })();
+</script>
