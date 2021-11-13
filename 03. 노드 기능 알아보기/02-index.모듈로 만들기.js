@@ -1,7 +1,4 @@
-const {
-    odd,
-    even
-} = require('./02-var.모듈로 만들기');
+const { odd, even } = require('./02-var.모듈로 만들기');
 const checkNumber = require('./02-func.모듈로 만들기');
 
 function checkStringOddOrEven(str) {
